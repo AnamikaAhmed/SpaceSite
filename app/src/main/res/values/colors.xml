@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="accent">#CDDC39</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="colorAccent">#757575</color>
+
+
+
+
+    <color name="colorPrimary">#4c98bb</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="white">#ffffff</color>
+    <color name="activity_background">#232530</color>
+
+
+    <color name="platinum">#DFE5E4</color>
+    <color name="background">#F6F8FB</color>
+    <color name="incoming_bubble">#06A2F5</color>
+    <color name="outcoming_bubble">#ECEBED</color>
+    <color name="custom_time_stamp_color">#aeabab</color>
+
+
+    <color name="queen_blue">#435D88</color>
+    <color name="button_color">#06A2F5</color>
+    <color name="bg_messages_list">#F6F8FB</color>
+
+
+
+</resources>

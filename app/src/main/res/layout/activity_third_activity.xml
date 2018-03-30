@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anamika.spacex.ThirdActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/customToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:drawableLeft="@drawable/alien_32px"
+                android:fontFamily="sans-serif-condensed"
+                android:text=" Guardian of Mars"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/coin_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:drawableRight="@drawable/coins_32px"
+                android:fontFamily="serif-monospace"
+                android:text="0"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input"
+        android:background="@color/bg_messages_list"
+        app:incomingAvatarHeight="56dp"
+        app:incomingAvatarWidth="56dp"
+        app:incomingDefaultBubbleColor="@color/incoming_bubble"
+        app:incomingTextColor="@color/white"
+        app:incomingTimeTextColor="@color/custom_time_stamp_color"
+        app:outcomingDefaultBubbleColor="@color/outcoming_bubble"
+        app:outcomingTextColor="@color/black"
+        app:outcomingTimeTextColor="@color/custom_time_stamp_color"
+        app:textAutoLink="all" />
+
+    <!--<com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/ball_pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/input"
+        app:indicatorName="BallPulseIndicator" />-->
+
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:inputButtonDefaultBgColor="@color/button_color"
+        app:inputButtonDefaultBgPressedColor="@color/button_color"
+        app:inputHint="@string/hint_enter_a_message" />
+
+</RelativeLayout>

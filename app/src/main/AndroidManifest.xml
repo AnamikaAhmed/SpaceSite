@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.anamika.spacex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".play_video" />
+        <activity android:name=".planetpage" />
+        <activity android:name=".planet_page" />
+        <activity android:name=".solarsystem" />
+        <activity android:name=".levelactivity" />
+        <activity android:name=".track" />
+        <activity android:name=".story2" />
+        <activity android:name=".story3" />
+        <activity android:name=".helpscreen" />
+        <activity android:name=".youtubevideo" />
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".story1" />
+        <activity android:name=".avatar" />
+        <activity
+            android:name=".EasyVideoPlayer"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/VideoTheme" />
+        <activity android:name=".Slider" />
+        <activity android:name=".gifImage" />
+        <activity android:name=".changeroom" />
+        <activity android:name=".Slider1" />
+        <activity android:name=".Leaderboard" />
+        <activity android:name=".track2" />
+        <activity android:name=".uroRocket" />
+        <activity android:name=".planetchange"></activity>
+    </application>
+
+</manifest>
